@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&family=Poppins&display=swap");
+body {
+  padding: 0%;
+  overflow: none;
+}
+.nav.shrunken {
+  width: 50px;
+}
+ul {
+  padding: 0;
+}
+.nav {
+  min-width: 180px;
+  height: 100vh;
+  z-index: 100;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  border: 0.6px solid #c1c1c1;
+  transition: min-width 0.3s ease, background-color 0.3s ease;
+}
+
+.nav.collapsed {
+  min-width: 50px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+
+.list li {
+  display: flex;
+  list-style: none;
+  width: 160px; 
+  text-decoration: none;
+  color: #393939;
+  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+.list a :hover {
+  padding: 0.5em;
+  background-color: #f3f4f6;
+}
+
+.list li:hover {
+  background-color: #e9f6ff;
+  border-radius: 5px;
+}
+
+.list a {
+  text-decoration: none;
+  color: #393939;
+  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.user {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 261px;
+  background: url("./assets/mr.png");
+  background-repeat: no-repeat;
+}
+header {
+  display: flex;
+  width: calc(100% - 175px);
+  position: fixed;
+  margin-left: 170px;
+  height: 7vh;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 0.6px solid #c1c1c1;
+  position: fixed;
+  z-index: 90;
+  top: 0%;
+}
+.Status {
+  border: #30b435 0.6px solid;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.header-text {
+  margin-left: 0.5em;
+}
+.header-text h1 {
+
+  color: #393939;
+  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+}
+.header-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: rgba(34, 34, 34, 0.89);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-right: 1em;
+}
+.search1 {
+  margin-left: 1.3em;
+  width: calc(100% - 20%);
+}
+.search {
+  width: 100%;
+  height: 45px;
+  border-radius: 9px;
+border: #dff0fb;
+  background-color: #ffffff;
+  padding: 0.5em;
+}
+.search:focus {
+  outline: none;
+}
+
+.list {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+
+.dashboard {
+  padding: 1em;
+}
+.upload button{
+  border: none;
+}
+.icon1 {
+  padding-left: 0.5em;
+}
+.logo {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 0.5em;
+  gap: 7px;
+}
+.logo h1 {
+  color: #3d63f7;
+  font-family: Poppins;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+padding-top: 0.2em;
+  line-height: normal;
+}
+.dropdown button{
+  font-size: 14px;
+}
+.logo svg {
+  margin-bottom: 0.6em;
+}
+.dashboard h1 {
+  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: rgba(34, 34, 34, 0.89);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 1em;
+}
+.date {
+  color: #393939;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.card {
+  padding: 1em;
+  width: 455px;
+  border-radius: 5px;
+  height: 200px;
+  background-color: #ffffff;
+}
+.card:hover {
+  filter: drop-shadow(0px 6px 4px rgba(196, 194, 194, 0.3));
+}
+.right {
+  margin-left: auto;
+  margin-right: 1em;
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+.attach-icon {
+  padding-left: 3em;
+}
+.Ready {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.right-ready {
+  margin-left: auto;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+}
+p {
+  color: #393939;
+  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.textready a {
+  text-decoration: none;
+  color: #393939;
+  cursor: pointer;
+  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.edit {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  border-top: 0.1px solid rgba(232, 232, 232, 0.839);
+  align-items: center;
+  padding-top: 0.5em;
+}
+.text-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 170px;
+}
+.card-flex {
+  padding-left: 0.3em;
+  position: fixed;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding-right: 0.5em;
+  width: calc(100% - 75%);
+  height: 82vh;
+  top: 15%;
+  flex-direction: row;
+  overflow-y: auto;
+  margin: 1em;
+  margin-bottom: 1em;
+}
+
+.card-flex::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-flex::-webkit-scrollbar-thumb {
+  background-color: #3d63f7;
+  border-radius: 4px;
+  height: 8px;
+}
+
+.card-flex::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.background {
+  width: calc(100% - 170px);
+  background-color: #edf2f7;
+  height: 100vh;
+  margin-left: 170px;
+  overflow: hidden;
+ 
+}
+.top {
+  width: calc(100% - 73%);
+  background-color: transparent;
+  height: 7vh;
+  position: fixed;
+  top: 8%;
+  display: flex;
+  align-items: center;
+}
+
+.text h1 {
+  color: #3d63f7;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.attachment {
+  padding-left: 1em;
+}
+.attachment:hover {
+  filter: drop-shadow(0px 6px 4px rgba(134, 38, 255, 0.3));
+}
+.text-card h1 {
+  color: #393939;
+  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: justify;
+  font-style: normal;
+
+  line-height: normal;
+}
+.float {
+  width: 440px;
+  background-color: #ffffff;
+  z-index: 100;
+  height: 250px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  display: none;
+  border: 0.6px solid #d2d2d2;
+  transition: top 0.5s ease-in;
+  flex-direction: column;
+}
+
+.float.visible {
+  display: block;
+  opacity: 1;
+}
+
+.text input:focus {
+  outline: blue;
+}
+.text input {
+  border: #c3c0c0 solid 0.7px;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+padding-bottom: 0.5em;
+padding-top: 0.5em;
+  margin-top: 5px;
+}
+
+.preview {
+  position: fixed;
+  width: calc(100% - 36%);
+  top: 7.4%;
+  height: 60vh;
+  right: 0.1%;
+  border-radius: 10px;
+  border: 0.6px solid #e2dede;
+  background-color: #ffffff;
+  z-index: 0;
+}
+
+.body-blur {
+  filter: blur(4px);
+  transition: filter 0.3s ease;
+}
+.top-preview {
+width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid rgb(197, 197, 197) 1px;
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.preview{
+  height: 91vh;
+ overflow-y: auto;
+}
+
+/* .top-preview div{
+  display: flex;
+  justify-content: end;
+} */
+
+.previewtitle h1 {
+  color: #393939;
+  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  font-style: normal;
+  line-height: normal;
+}
+.upload button {
+  border-radius: 50%;
+  border: solid 1px rgb(224, 224, 224);
+  padding: 0.6em;
+  margin-right: 5px;
+  background-color: transparent;
+}
+
+.upload button:hover {
+  border-radius: 50%;
+  border: solid 1px rgb(224, 224, 224);
+  padding: 0.6em;
+  background-color: #deebfa;
+  margin-right: 5px;
+}
+.preview-button {
+  width: 100px;
+  height: 25px;
+
+}
+.preview-section{
+  width: 100%;
+  height: 100%;
+}
+.preview-button button {
+  width: 100px;
+  height: 45px;
+  background-color: #30b435;
+  border-radius: 30px;
+  color: white;
+  border: none;
+}
+.button-wrapper {
+  display: flex;
+  align-self: center;
+  gap: 5px;
+  
+}
+
+.card-button button {
+  width: 100px;
+  height: 45px;
+  background-color: #30b435;
+  border-radius: 30px;
+  color: white;
+}
+
+.sendmail {
+  display: none;
+}
+.send {
+  display: block;
+}
+.sendmail button {
+  width: 100px;
+  height: 45px;
+  background-color: #f65434;
+  border-radius: 30px;
+  color: white;
+  z-index: 90;
+  border: none;
+}
+
+.Heading-Template h1 {
+  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+}
+.float {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.file input {
+  width: 100%;
+  margin-top: 15px;
+}
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid 1px rgb(224, 224, 224);
+  padding-top: 1em;
+  margin-top: 1.6em;
+}
+.cancel {
+  width: 100px;
+  height: 45px;
+  background-color: #f65434;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+.createtemp {
+  width: 100px;
+  height: 45px;
+  background-color: #3d63f7;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+
+.report{
+  width: calc(100% - 176px);
+  background-color: #dff0fb;
+  height: 100vh;
+  margin-left: 176px;
+  overflow: hidden;
+ 
+}
+
+.table-data{
+  position:  relative;
+  top: 10%;
+  overflow: scroll;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+}
+
+.text-end input{
+  margin-bottom: 0.5em;
+  width: 400px;
+  height: 30px;
+  padding: 1em;
+  border-radius: 5px;
+
+  border: solid 1px rgb(224, 224, 224);
+}
+
+.text-end :focus{
+  outline: none;
+}
+.jodit-react-container{
+z-index: 0;
+}
+.Update button{
+  width: 100px;
+  height: 45px;
+  background-color: #f65434;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-size: 14px;
+  position: fixed;
+  top: 7.5%;
+  left: 10%;
+}

@@ -1,0 +1,119 @@
+-----------Fetch template names from AWS---------------------
+import React, { useEffect, useState } from 'react';
+import { Nav } from "./Nav";
+import "./App.css";
+import { Header } from "./Header";
+import { Background } from "./Background";
+import axios from 'axios';
+
+
+function App() {
+  //  const create_template = () =>{
+  //   fetchData();
+  //  }
+  const [templates, setTemplates] = useState([]);
+
+  useEffect(() => {
+    const fetchTemplates = () => {
+      try {
+        axios.get('http://127.0.0.1:8000/fetch_email_templates').then((response) => {
+
+          setTemplates(response.data);
+        });
+      } catch (error) {
+        console.error('Error fetching email templates:', error);
+      }
+    };
+
+    fetchTemplates();
+  }, []);
+
+  //  const fetchData = async ()=> {    
+  //   axios.get("http://127.0.0.1:8000/create_template")
+  //   .then((response) => {
+  //     alert("template created");
+  //     // setData(response.data); // Update the component state with the received data
+  //   })
+  //   .catch((error) => {
+  //     console.error("Error fetching data:", error);
+  //   });
+
+  //  }
+
+
+
+
+
+
+  return (
+    // <div className="App">
+    //   <h1>Data from API</h1>
+    //   <ul>
+    //     {Object.keys(data).map((key, index) => (
+    //       <li key={index}>{`${key}: ${data[key]}`}</li>
+    //     ))}
+    //   </ul>
+    // </div>
+    <div>
+        <h1>Email Templates</h1>
+        <ul>
+          {templates.map((template) => (
+            <h1>{template}</h1>
+
+          ))}
+        </ul>
+      </div>
+  );
+}
+
+export default App;
+
+
+----------------------------------------------
+
+
+
+
+-------------------template creation----------------------------------------------------------------
+// import React, { useEffect } from 'react';
+import axios from 'axios';
+import './App.css';
+
+function App() {
+   const create_template = () =>{
+    fetchData();
+   }
+
+   const fetchData = async ()=> {    
+    axios.get("http://127.0.0.1:8000/create_template")
+    .then((response) => {
+      alert("template created")
+      // setData(response.data); // Update the component state with the received data
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
+ 
+   }
+  
+
+  
+
+
+
+  return (
+    // <div className="App">
+    //   <h1>Data from API</h1>
+    //   <ul>
+    //     {Object.keys(data).map((key, index) => (
+    //       <li key={index}>{`${key}: ${data[key]}`}</li>
+    //     ))}
+    //   </ul>
+    // </div>
+    <div className="App">
+      <input type="button" onClick={create_template} value="template creation"></input>
+    </div>
+  );
+}
+
+export default App;
