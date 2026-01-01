@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Mailer Service - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The frontend of the **Mailer Service** provides a user-friendly interface for managing email templates, adding recipients, and sending bulk emails through AWS.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+- **Manage Templates**: Upload and preview email templates.
+- **Recipient Management**: Add, edit, or upload recipient lists.
+- **Bulk Email Sending**: Trigger bulk email campaigns with minimal effort.
+- **Responsive Design**: Clean and intuitive interface for an optimal user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+Ensure the following are installed on your system:
+1. **Node.js**: [Download here](https://nodejs.org/)
+2. **npm**: Comes with Node.js.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Setup Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/basillal/Mailer-Service.git
+cd Mailer-Service/frontend
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Configure Backend API
+- Update the API base URL in the `environment.js` configuration file (if applicable):
+  ```javascript
+  export const API_URL = 'http://localhost:3000'; // Update this to match your backend URL
+  ```
 
-### `npm run eject`
+### 4. Start the Development Server
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- The app will run locally at `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+frontend/
+├── src/              # Source code for the React application
+│   ├── components/   # Reusable UI components
+│   ├── pages/        # Application pages (e.g., dashboard, email upload)
+│   ├── services/     # API service handlers
+├── public/           # Static assets (e.g., images, HTML file)
+│   ├── index.html    # Main HTML entry point
+├── package.json      # Dependencies and scripts
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Scripts
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **`npm start`**: Start the development server.
+- **`npm run build`**: Build the production-ready app.
+- **`npm test`**: Run tests if configured.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. Navigate to the application in your browser (`http://localhost:3000`).
+2. Use the interface to:
+   - Upload email templates.
+   - Add or upload recipient lists.
+   - Send bulk emails via the backend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The **Mailer Service Frontend** is designed for simplicity and efficiency, making bulk email management effortless!
